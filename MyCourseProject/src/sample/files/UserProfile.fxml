@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.usercontrollers.UserProfileController">
+    <left>
+        <VBox prefHeight="226.0" prefWidth="154.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" prefHeight="27.0" prefWidth="122.0" text="Имя">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label alignment="CENTER" prefHeight="27.0" prefWidth="130.0" text="Фамилия">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label alignment="CENTER" text="Год рождения">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label alignment="CENTER" prefHeight="27.0" prefWidth="126.0" text="Пароль">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label alignment="CENTER" prefHeight="27.0" prefWidth="126.0" text="Логин">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label alignment="CENTER" prefHeight="27.0" prefWidth="124.0" text="Почта">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+    </left>
+    <right>
+        <VBox prefHeight="238.0" prefWidth="526.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="name" prefHeight="27.0" prefWidth="394.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="70.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="surname" prefHeight="27.0" prefWidth="403.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="70.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="yearOfBirth" prefHeight="27.0" prefWidth="429.0" style="-fx-background-color: orange;" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="70.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="password" prefHeight="27.0" prefWidth="430.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="70.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="login" prefHeight="27.0" prefWidth="419.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="70.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="email" prefHeight="27.0" prefWidth="432.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="70.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+    </right>
+    <center>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+    <top>
+        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="54.0" prefWidth="182.0" text="Профиль">
+                    <HBox.margin>
+                  <Insets right="50.0" top="20.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Button fx:id="backButton" mnemonicParsing="false" onAction="#clickBackButton" prefHeight="48.0" prefWidth="105.0" text="Назад">
+                    <HBox.margin>
+                        <Insets right="40.0" top="25.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </top>
+</BorderPane>

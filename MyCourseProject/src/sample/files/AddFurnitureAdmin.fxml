@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DC143C;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.admincontrollers.AddFurnitureAdminController">
+    <children>
+        <AnchorPane layoutY="100.0" prefHeight="301.0" prefWidth="600.0" style="-fx-background-color: #F08080;">
+            <children>
+                <Button fx:id="addButton" layoutX="198.0" layoutY="219.0" mnemonicParsing="false" onAction="#clickAddButton" prefHeight="51.0" prefWidth="190.0" text="Добавить">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="name" layoutX="132.0" layoutY="39.0" prefHeight="34.0" prefWidth="92.0" />
+                <TextField fx:id="sellPrice" layoutX="417.0" layoutY="39.0" prefHeight="34.0" prefWidth="92.0" />
+                <TextField fx:id="price" layoutX="132.0" layoutY="100.0" prefHeight="34.0" prefWidth="92.0" />
+                <TextField fx:id="quantity" layoutX="417.0" layoutY="100.0" prefHeight="34.0" prefWidth="92.0" />
+                <Label layoutX="22.0" layoutY="42.0" prefHeight="27.0" prefWidth="85.0" text="Название">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="270.0" layoutY="42.0" text="Цена продажи">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="35.0" layoutY="106.0" prefHeight="27.0" prefWidth="58.0" text="Цена">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="282.0" layoutY="106.0" prefHeight="27.0" prefWidth="108.0" text="Количество">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Button fx:id="back" layoutX="427.0" layoutY="24.0" mnemonicParsing="false" onAction="#clickBack" prefHeight="47.0" prefWidth="148.0" text="Назад">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

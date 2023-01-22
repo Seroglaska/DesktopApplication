@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.usercontrollers.FurnitureUserController">
+    <top>
+        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #008000;">
+            <children>
+                <Button fx:id="buyButton" mnemonicParsing="false" onAction="#clickBuyButton" prefHeight="34.0" prefWidth="138.0" text="Купить товар">
+                    <HBox.margin>
+                        <Insets left="30.0" right="40.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </HBox>
+    </top>
+    <center>
+        <TableView fx:id="FurnitureTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="toName" prefWidth="284.800048828125" text="Название" />
+                <TableColumn fx:id="toSellPrice" prefWidth="176.0" text="Цена" />
+                <TableColumn fx:id="toQuantity" prefWidth="139.199951171875" text="Количество" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" prefHeight="69.0" prefWidth="600.0" BorderPane.alignment="TOP_RIGHT">
+            <children>
+                <Button fx:id="backButton" mnemonicParsing="false" onAction="#clickBackButton" prefHeight="40.0" prefWidth="120.0" text="Назад" textAlignment="RIGHT">
+                    <HBox.margin>
+                        <Insets right="35.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>
